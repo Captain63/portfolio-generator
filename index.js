@@ -7,6 +7,6 @@
 const fs = require(fs);
 
 // REPLACE htmlString with whatever variable is created
-fs.appendFile("index.html", htmlString, (err) => {
+fs.writeFile("index.html", htmlString, (err) => {
     err ? console.error(err) : console.log('File created successfully.');
 });
